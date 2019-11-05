@@ -9,7 +9,7 @@
 				<hr/>
 				<table class="table table-bordered">
 					<tr>
-					<td><img src="" alt=""></td>
+					<td><img src="/img/${dr.img}" alt=""></td>
 					</tr>
 					<tr>
 						<td>Doctor ID:</td>

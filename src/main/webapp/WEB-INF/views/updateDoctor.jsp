@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<jsp:include page="adminHeader.jsp"></jsp:include>
+<jsp:include page="header.jsp"></jsp:include>
 
 
 
@@ -57,7 +57,7 @@
 						</div>
 						<div class="form-group">
 						<label>Qualification</label> <textarea type="text" rows="3" name="Qualification"
-							class="form-control" placeholder="" value="${dr.qualification}"></textarea>
+							class="form-control" placeholder="" >${dr.qualification}</textarea>
 						</div>
 						
 						<div class="form-group">
@@ -77,4 +77,4 @@
 		</div>
 	</div>
 </section>
-<jsp:include page="adminFooter.jsp"></jsp:include>
+<jsp:include page="footer.jsp"></jsp:include>

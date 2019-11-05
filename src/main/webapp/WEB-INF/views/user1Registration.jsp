@@ -10,6 +10,9 @@
   <meta name="author" content="">
 
   <title>Medicio landing page template for Health niche</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  
 
   <!-- css -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -51,19 +54,15 @@
             </div>
           </div>
         </div>
-      </div>
-     
+      </div>    
       
     </nav>
 <section class="content-info py-5">
-   <div class="container py-md-5" style="margin-top: 125px;">
+   <div class="container py-md-5" style="margin-top:;">
        <div class="text-center px-lg-5">
-           <h3 style="color: green;">${msg}</h3>
+           
            <h3 class="title-w3ls mb-5" style="color: green;">Please Registation</h3>
-           <div class="title-desc text-center px-lg-5">
-               <p class="px-lg-5 sub-vj">Please read our terms and condition if you agree
-               with us you can apply for loan otherwise you don't need apply for the loan.</p>
-           </div>
+           
        </div>
        <div class="contact-w3ls-form mt-5">
            <form action="/save" class="w3-pvt-contact-fm" method="post">

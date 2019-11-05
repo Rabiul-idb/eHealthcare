@@ -92,4 +92,9 @@ public class HomeController {
 	public ModelAndView SaveRecep() {
 		return new ModelAndView("addReceiptionist");
 	}
+	
+	@GetMapping(value = "/payment")
+	public ModelAndView payment() {
+		return new ModelAndView("paymentForm");
+	}
 }

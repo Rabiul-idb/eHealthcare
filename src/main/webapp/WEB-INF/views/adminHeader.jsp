@@ -9,30 +9,30 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-   <link href="aplugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="/aplugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="aplugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="/aplugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="aplugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="/aplugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="aplugins/morrisjs/morris.css" rel="stylesheet" />
+    <link href="/aplugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="acss/style.css" rel="stylesheet">
+    <link href="/acss/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="acss/themes/all-themes.css" rel="stylesheet" />
+    <link href="/acss/themes/all-themes.css" rel="stylesheet" />
 </head>
 
 <body class="theme-red">
@@ -285,12 +285,12 @@
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rabiul Islam</div>
                     <div class="email">rabiul.idb40@gmail.com</div>
                     <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <i href="/javascript:void(0);" class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li><a href=""><i class="material-icons">person</i>Profile</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Users</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Online Appointments</a></li>
+                            <li><a href=""><i class="material-icons">group</i>Users</a></li>
+                            <li><a href=""><i class="material-icons">shopping_cart</i>Online Appointments</a></li>
                             
                             <li role="separator" class="divider"></li>
                             <li><a href="/logout"><i class="material-icons">input</i>Sign Out</a></li>
@@ -382,6 +382,9 @@
                             </li>
                              <li>
                                 <a href="pages/tables/editable-table.html">Online Appointment</a>
+                            </li>
+                             <li>
+                                <a href="/payment">Payment</a>
                             </li>
                         </ul>
                     </li>

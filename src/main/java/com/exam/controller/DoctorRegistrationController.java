@@ -48,7 +48,7 @@ public class DoctorRegistrationController {
 		//start		
 		
 		System.out.println(files.length);
-		String uploadDir = "E:\\26-10-2019\\project\\Spring-eDonation\\src\\main\\resources\\static\\img\\teammemberpic";
+		String uploadDir = "F:\\Spring Project\\eHealthcare\\src\\main\\resources\\static\\img";
 		// ---------------------------------------------------
 		StringBuilder fileNames = new StringBuilder();
 		Path fileNameAndPath = null;
