@@ -61,7 +61,8 @@ public class AppointmentController {
 	        System.out.println(massage);
 	        javaMailSender.send(massage);
 	        map.put("msg", "Success");
-	        return new ModelAndView("onlineAppointment", map);
+	        
+	        return new ModelAndView("index", map);
 		
 	}
 	

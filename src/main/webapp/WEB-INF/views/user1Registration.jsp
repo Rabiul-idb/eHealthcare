@@ -12,57 +12,24 @@
   <title>Medicio landing page template for Health niche</title>
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-  
-
-  <!-- css -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
-  <link href="css/nivo-lightbox.css" rel="stylesheet" />
-  <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-  <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
-  <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
-  <link href="css/animate.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- boxed bg -->
-  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
-  <!-- template skin -->
-  <link id="t-colors" href="color/default.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Medicio
-    Theme URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+ 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-
-  <div id="wrapper">
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="top-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <p class="bold text-left">Monday - Saturday, 8am to 10pm </p>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <p class="bold text-right">Call us now +62 008 65 001</p>
-            </div>
-          </div>
-        </div>
-      </div>    
-      
-    </nav>
-<section class="content-info py-5">
-   <div class="container py-md-5" style="margin-top:;">
+<body class=""style="background-color: #E8F8F5;" >
+	<div class="row mb-3">
+			<div class="col-md-12"
+				style="height: 60px; background-color: #38C2BA;">
+				<div class="container mt-3 text-white">
+					<span class=""><b>Monday - Saturday, 8am to 10pm </b></span> <span
+						class="float-right"><b>Call us now +62 008 65 001</b></span>
+				</div>
+			</div>
+		</div>
+<section class="content-info">
+   <div class="container" style="margin-top:;">
        <div class="text-center px-lg-5">
            
            <h3 class="title-w3ls mb-5" style="color: green;">Please Registation</h3>
-           
+           <hr/>
        </div>
        <div class="contact-w3ls-form mt-5">
            <form action="/save" class="w3-pvt-contact-fm" method="post">
@@ -93,7 +60,7 @@
                                name="username" placeholder="Enter Username" required="">
                        </div>
                        <div class="form-group">
-                           <label>Password</label> <input class="form-control" type="text"
+                           <label>Password</label> <input class="form-control" type="password"
                                name="password" placeholder="Enter Password" required="">
                        </div>
                        <div class="form-group">
@@ -112,7 +79,7 @@
                    </div>
                    <div class="form-group mx-auto mt-3">
 
-						<button type="submit" class="btn submit btn-success" style="width:40%; margin-left:350px;">Submit</button>
+						<button type="submit" class="btn submit btn-success" style="width:100%; margin-left:340px;">Submit</button>
                    </div>
                </div>
            </form>
@@ -123,10 +90,10 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="wow fadeInDown" data-wow-delay="0.1s">
+          <div class="col-sm-6 col-md-4 card ">
+            <div class="" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>About Medicio</h5>
+                <h5 class="text-center" style="color:#38C2BA">About Medicio</h5>
                 <p>
                   Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
                 </p>
@@ -144,10 +111,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 card">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>Medicio center</h5>
+                <h5 class="text-center" style="color:#38C2BA">Medicio center</h5>
                 <p>
                   Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
                 </p>
@@ -168,34 +135,22 @@
                     <span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-								</span> hello@medicio.com
+								</span> rabiul.idb40@gmail.com
                   </li>
 
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-6 col-md-4 card">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>Our location</h5>
+                <h5 class="text-center" style="color:#38C2BA">Our location</h5>
                 <p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
 
               </div>
             </div>
-            <div class="wow fadeInDown" data-wow-delay="0.1s">
-              <div class="widget">
-                <h5>Follow us</h5>
-                <ul class="company-social">
-                  <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-                  <li class="social-dribble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            
         </div>
       </div>
       <div class="sub-footer">
@@ -204,7 +159,7 @@
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="text-left">
-                  <p>&copy;Copyright - Medicio Theme. All rights reserved.</p>
+                  <p>&copy;Copyright -Rabiul islam. All rights reserved.</p>
                 </div>
               </div>
             </div>
@@ -218,7 +173,7 @@
                       Licensing information: https://bootstrapmade.com/license/
                       Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
                     -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    Designed by <a href="">Md. Rabiul Islam</a>
                   </div>
                 </div>
               </div>
@@ -228,25 +183,12 @@
       </div>
     </footer>
 
-  </div>
+  
   <script>
    var d = new Date();
    document.getElementById("demo").innerHTML = d;
 </script>
-  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-
-  <!-- Core JavaScript Files -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.scrollTo.js"></script>
-  <script src="js/jquery.appear.js"></script>
-  <script src="js/stellar.js"></script>
-  <script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/nivo-lightbox.min.js"></script>
-  <script src="js/custom.js"></script>
+ 
 
 </body>
 

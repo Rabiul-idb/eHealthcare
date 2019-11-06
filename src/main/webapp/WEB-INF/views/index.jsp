@@ -120,7 +120,7 @@
                     <div class="cta-btn">
                       <a href="/onlineAppointment" class="btn btn-skin btn-lg">Book an appoinment</a>
                     </div>
-                    <a href="/createUser" class="text-info">Create user</a>
+                   
                   </div>
                 </div>
               </div>

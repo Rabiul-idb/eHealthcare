@@ -88,3 +88,6 @@
 </section>
 
 <jsp:include page="footer.jsp"></jsp:include>
+<script>
+	alert("Check your email and get appointment by token Number. your Token number is "+token);
+</script>
