@@ -7,10 +7,10 @@
 			<div class="col-md-8">
 				<h2 class="text-center ">View Details</h2>
 				<hr/>
-				<table class="table table-bordered">
-					<tr>
-					<td><img src="/img/${dr.img}" alt=""></td>
-					</tr>
+				
+					
+					<img src="/img/${dr.img}" alt="" style="height:320px; weight:305px; margin-bottom:10px;" class="text-center"/>
+					<table class="table table-bordered">
 					<tr>
 						<td>Doctor ID:</td>
 						<td>${dr.id}</td>
@@ -57,8 +57,6 @@
 					</tr>
 				</table>
 				<a href="/doctor/edit/${dr.id}" class="btn btn-skin btn-lg">Update Information </a>
-				
-
 			</div>
 		</div>
 	</div>

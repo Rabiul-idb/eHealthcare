@@ -321,7 +321,7 @@
                                         <a href="/doctorRegistration">Add </a>
                                     </li>
                                     <li>
-                                        <a href="/testreport">Update</a>
+                                        <a href="/pdf">Update</a>
                                     </li>
                                     <li>
                                         <a href="/showDoc">Show doctors</a>
@@ -342,7 +342,7 @@
                                         <a href="pages/widgets/cards/colored.html">Update</a>
                                     </li>
                                     <li>
-                                        <a href="pages/widgets/cards/no-header.html">Show Details</a>
+                                        <a href="/showReceiptionist">Show Details</a>
                                     </li>
                                 </ul>                        
                     </li>

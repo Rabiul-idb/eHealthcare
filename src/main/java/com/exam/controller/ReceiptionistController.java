@@ -1,7 +1,9 @@
 package com.exam.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -57,4 +61,55 @@ public class ReceiptionistController {
 	}
 	
 	
+	//show receiptionist
+	@RequestMapping("/showReceiptionist")
+	public ModelAndView show(Map<String, Object> map) {
+
+		map.put("receiptionlist", receiptionistServiceImpl.getAll());
+
+		System.out.println(receiptionistServiceImpl.getAll());
+
+		return new ModelAndView("/addReceiptionistShow", map);
+
+	}
+	
+	//delete by id
+		@RequestMapping(value = "/receiption/delete/{id}")
+		public ModelAndView deleteReceipt(@PathVariable("id") long id) {
+
+			System.out.println("work id ==============" + id);
+			receiptionistServiceImpl.delete(id);
+
+			return new ModelAndView("redirect:/showReceiptionist");
+		}
+
+		//show by id
+		@RequestMapping(value = "/receiption/show/{id}")
+		public ModelAndView showDetails(@PathVariable("id") long id, Map<String, Object> map) {
+			System.out.println("work id ==============" + id);
+			map.put("rnst", receiptionistServiceImpl.getById(id));
+			return new ModelAndView("/addReceiptionistDetails", map);
+		}
+		
+		//update submit method
+		@RequestMapping(value = "/UpdateReceiptionist")
+		public ModelAndView uddateReceiption(@ModelAttribute ("addReceiptionist") AddReceiptionist addReceiptionist,Map<String, Object> map) {
+			System.out.println("update value = ====================="+ addReceiptionist);
+			receiptionistServiceImpl.update(addReceiptionist);
+			map.put("rnst", receiptionistServiceImpl.getById(addReceiptionist.getId()));
+			return new ModelAndView("/addReceiptionistDetails",map);
+		}
+		
+		//edit method
+		@RequestMapping("/receiptionist/edit/{id}")
+		public ModelAndView edit(@PathVariable long id) {
+			Map<String, Object> model = new HashMap<>();
+
+			AddReceiptionist addReceiptionist = receiptionistServiceImpl.getById(id);
+
+			model.put("rnst", addReceiptionist);
+			return new ModelAndView("addReceiptionistUpdate", model);
+		}
+
+
 }

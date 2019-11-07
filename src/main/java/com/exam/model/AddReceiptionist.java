@@ -12,18 +12,19 @@ public class AddReceiptionist implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int id;
+	long id;
 	String fullname;
 	String username;
 	String address;
 	String pass;
 	String email;
 	String phnNo;
-	String Qualification;
-	public int getId() {
+	String qualification;
+	
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getFullname() {
@@ -63,11 +64,12 @@ public class AddReceiptionist implements Serializable {
 		this.phnNo = phnNo;
 	}
 	public String getQualification() {
-		return Qualification;
+		return qualification;
 	}
 	public void setQualification(String qualification) {
-		Qualification = qualification;
+		this.qualification = qualification;
 	}
+	
 	
 	
 	

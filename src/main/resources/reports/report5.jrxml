@@ -59,7 +59,7 @@
 		<band height="136" splitType="Stretch">
 			<image>
 				<reportElement x="0" y="0" width="164" height="126" uuid="7a45827a-6e65-405e-8c55-bbb0b1fda666"/>
-				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["src/main/resources/reports/coffee.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement style="Title" x="270" y="0" width="263" height="62" uuid="1e82fe86-d317-4758-abcb-ae6968a9e537"/>
@@ -84,7 +84,7 @@
 			</staticText>
 			<image>
 				<reportElement x="633" y="-73" width="219" height="209" uuid="c6d1d4ab-31c9-46bb-908b-c05f4832db40"/>
-				<imageExpression><![CDATA["coffee_stain.png"]]></imageExpression>
+				<imageExpression><![CDATA["src/main/resources/reports/coffee.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>

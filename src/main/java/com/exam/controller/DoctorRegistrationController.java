@@ -113,6 +113,7 @@ public class DoctorRegistrationController {
 
 	}
 
+	//edit method
 	@RequestMapping("/doctor/edit/{id}")
 	public ModelAndView edit(@PathVariable long id) {
 		Map<String, Object> model = new HashMap<>();
@@ -218,7 +219,7 @@ public class DoctorRegistrationController {
 					File file = new File("src/main/resources/reports/report5.pdf");
 					response.setHeader("Content-Type", servletContext.getMimeType(file.getName()));
 					response.setHeader("Content-Length", String.valueOf(file.length()));
-					response.setHeader("Content-Disposition", "inline; filename=\"report5.pdf\"");
+					response.setHeader("Content-Disposition", "inline; filename=\"report5.pdf");
 					Files.copy(file.toPath(), response.getOutputStream());
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block

@@ -31,26 +31,36 @@ public class ReceiptionistDaoImpl implements CommonDao<AddReceiptionist> {
 
 	@Override
 	public AddReceiptionist update(AddReceiptionist entity) {
-		// TODO Auto-generated method stub
-		return null;
+		sessionFactory.getCurrentSession().saveOrUpdate(entity);
+
+		return entity;
 	}
 
 	@Override
 	public boolean delete(long id) {
-		// TODO Auto-generated method stub
-		return false;
+		try {
+			AddReceiptionist addReceiptionist = sessionFactory.getCurrentSession().get(AddReceiptionist.class,
+					id);
+			sessionFactory.getCurrentSession().delete(addReceiptionist);
+			return true;
+		} catch (HibernateException e) {
+			return true;
+		}
 	}
 
 	@Override
 	public AddReceiptionist getById(long id) {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			AddReceiptionist entity = sessionFactory.getCurrentSession().get(AddReceiptionist.class, id);
+			return entity;
+		} catch (HibernateException e) {
+			return null;
+		}
 	}
 
 	@Override
 	public List<AddReceiptionist> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return sessionFactory.getCurrentSession().createQuery("FROM AddReceiptionist").list();
 	}
 
 	

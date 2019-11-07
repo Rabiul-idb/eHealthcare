@@ -31,26 +31,25 @@ public class ReceiptionistServiceImpl implements CommonService<AddReceiptionist>
 
 	@Override
 	public AddReceiptionist update(AddReceiptionist entity) {
-		// TODO Auto-generated method stub
-		return null;
+		return receiptionistDaoImpl.update(entity);
 	}
 
 	@Override
 	public boolean delete(long id) {
 		// TODO Auto-generated method stub
-		return false;
+		return receiptionistDaoImpl.delete(id);
 	}
 
 	@Override
 	public AddReceiptionist getById(long id) {
 		// TODO Auto-generated method stub
-		return null;
+		return receiptionistDaoImpl.getById(id);
 	}
 
 	@Override
 	public List<AddReceiptionist> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return receiptionistDaoImpl.getAll();
 	}
 
 	
