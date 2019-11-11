@@ -38,13 +38,18 @@ public class OnlineAppointmentServiceImpl implements CommonService<OnlineAppoint
 	@Override
 	public OnlineAppointment getById(long id) {
 		// TODO Auto-generated method stub
-		return null;
+		return onlineAppointDaoImpl.getById(id);
+	}
+	
+	public List<OnlineAppointment> getByToken(int token) {
+		// TODO Auto-generated method stub
+		return onlineAppointDaoImpl.getByToken(token);
 	}
 
 	@Override
 	public List<OnlineAppointment> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return onlineAppointDaoImpl.getAll();
 	}
 	
 

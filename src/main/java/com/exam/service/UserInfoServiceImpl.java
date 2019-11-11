@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import com.exam.dao.UserInfoDao;
 import com.exam.model.UserInfo;
+import com.exam.model.UserMessage;
 
 @Service
 @Transactional
@@ -61,4 +62,6 @@ public class UserInfoServiceImpl implements UserDetailsService,UserInfoService {
 		return userInfoDao.getAll();
 	}
 
+	
+	
 }

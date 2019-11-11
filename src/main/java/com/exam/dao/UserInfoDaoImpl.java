@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.exam.model.UserInfo;
+import com.exam.model.UserMessage;
 @Repository
 public class UserInfoDaoImpl implements UserInfoDao {
 
@@ -74,4 +75,7 @@ public class UserInfoDaoImpl implements UserInfoDao {
 		return userInfoEntity;
 	}
 
+	
+	
+	
 }

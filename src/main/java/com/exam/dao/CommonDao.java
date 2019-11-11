@@ -2,6 +2,8 @@ package com.exam.dao;
 
 import java.util.List;
 
+
+
 public interface CommonDao <T>{
 	public T save(T entity);
 	public T update(T entity);

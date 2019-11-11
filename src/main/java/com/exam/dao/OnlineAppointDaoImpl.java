@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.exam.model.AddReceiptionist;
 import com.exam.model.OnlineAppointment;
 import com.exam.model.UserInfo;
 @Repository
@@ -39,14 +40,28 @@ public class OnlineAppointDaoImpl implements CommonDao<OnlineAppointment> {
 
 	@Override
 	public OnlineAppointment getById(long id) {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			OnlineAppointment entity = sessionFactory.getCurrentSession().get(OnlineAppointment.class, id);
+			return entity;
+		} catch (HibernateException e) {
+			return null;
+		}
+	}
+	
+	
+	public List<OnlineAppointment> getByToken(int token) {
+		try {
+			List entity = sessionFactory.getCurrentSession().createQuery("FROM OnlineAppointment where token = '"+token+"'").list();
+			return entity;
+		} catch (HibernateException e) {
+			return null;
+		}
 	}
 
 	@Override
 	public List<OnlineAppointment> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return sessionFactory.getCurrentSession().createQuery("FROM OnlineAppointment").list();
 	}
 
 	

@@ -354,7 +354,7 @@
                         </a>
                         <ul class="ml-menu">
                                     <li>
-                                         <a href="pages/ui/alerts.html">Online Appointments</a>
+                                         <a href="/onlineAppoint/show">Online Appointments</a>
                                     </li>
                                     <li>
                                         <a href="pages/ui/alerts.html">Users</a>
@@ -381,7 +381,7 @@
                                 <a href="pages/tables/editable-table.html">Receiptionist</a>
                             </li>
                              <li>
-                                <a href="pages/tables/editable-table.html">Online Appointment</a>
+                                <a href="/onlineAppoint/show">Online Appointment</a>
                             </li>
                              <li>
                                 <a href="/payment">Payment</a>
