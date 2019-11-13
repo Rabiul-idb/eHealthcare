@@ -4,7 +4,7 @@
 <jsp:include page="adminHeader.jsp"></jsp:include>
 
 
-			<div class="col-md-12">
+			<div class="col-md-12" style="margin-top:">
 				<h2 class="text-center ">All Doctor Information</h2>
 				<hr/>
 				<table class="table table-bordered">
@@ -33,8 +33,8 @@
 						<td>${dr.visitHour}</td>
 						<td>${dr.roomNo}</td>
 						<td>
-							<a href="/doctor/show/${dr.id}">Details</a>
-							<a href="/doctor/delete/${dr.id}">delete</a>
+							<a href="/doctor/show/${dr.id}" class="btn btn-success">Details</a>
+							<a href="/doctor/delete/${dr.id}"  class="btn btn-danger">delete</a>
 						</td>
 					
 					</tr>				

@@ -21,7 +21,7 @@
 								id="password" class="form-control" name="password"  required="true"/>
 						</div>
 						<div class="cta-btn">
-							<a href="/admin" class="btn btn-skin btn-lg">LOGIN
+							<a href="/onlineAppoint/show" class="btn btn-skin btn-lg">LOGIN
 								</a>
 						</div>
 					</form>

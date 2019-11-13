@@ -57,11 +57,11 @@
 							<label for="inputState1">Doctor</label> 
 							<select id="inputState1" name="pDoctor"
 								class="form-control">
-								<option selected>Neurology</option>
-								<option>Dental</option>
-								<option>Cardiology</option>
-								<option>Psycology</option>
-								<option>Gynee & Obs</option>
+								<option selected>Rothi</option>
+								<option>Abdul Alim</option>
+								<option>Abdullah Asif</option>
+								<option>Enamul Haque</option>
+								<option>Rabiul Islam</option>
 							</select>
 						</div>
 						
@@ -81,7 +81,7 @@
 						</div>
 					<button type="submit" class="btn btn-primary pull-right">Submit</button>
 				</form>
-				<h2>${msg}</h2>
+				<h2 class="text-success">${msg}</h2>
 			</div>
 		</div>
 	</div>

@@ -10,9 +10,17 @@
 
 					<h5 class="text-center">Send your message to us and we will Contact with you quickly via email or phone. Thanks a lot for staying with us.</h5>
 					<hr />
-					<form>
+					<form action="/usermessage" method="post">
+					<div class="form-group">
+						<label>Name</label>
+						<input class="form-control" type="text" placeholder="enter your name" name="name"/>
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input class="form-control" type="email" placeholder="enter your mail address" name="email"/>
+					</div>
 						<div class="form-group">
-						<label for="inputAddress">Type your Message</label> <textarea type="text" rows="8" name="Umessage"
+						<label for="inputAddress">Type your Message</label> <textarea type="text" rows="8" name="msg"
 							class="form-control" id="inputAddress" placeholder=" your Message"></textarea>
 					</div>
 						

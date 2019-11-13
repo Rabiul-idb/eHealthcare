@@ -11,22 +11,23 @@ import com.exam.dao.CreateUserDaoImpl;
 import com.exam.dao.OnlineAppointDaoImpl;
 import com.exam.model.CreateUser;
 import com.exam.model.OnlineAppointment;
+import com.exam.model.UserMessage;
 
 @Service
 @Transactional
-public class CreateUserServiceImpl implements CommonService<CreateUser> {
+public class CreateUserServiceImpl implements CommonService<UserMessage> {
 
 	@Autowired
 	CreateUserDaoImpl createUserDaoImpl;
 
 	@Override
-	public CreateUser save(CreateUser entity) {
+	public UserMessage save(UserMessage entity) {
 		
 		return createUserDaoImpl.save(entity);
 	}
 
 	@Override
-	public CreateUser update(CreateUser entity) {
+	public UserMessage update(UserMessage entity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -34,19 +35,19 @@ public class CreateUserServiceImpl implements CommonService<CreateUser> {
 	@Override
 	public boolean delete(long id) {
 		// TODO Auto-generated method stub
-		return false;
+		return createUserDaoImpl.delete(id);
 	}
 
 	@Override
-	public CreateUser getById(long id) {
+	public UserMessage getById(long id) {
 		// TODO Auto-generated method stub
-		return null;
+		return createUserDaoImpl.getById(id);
 	}
 
 	@Override
-	public List<CreateUser> getAll() {
+	public List<UserMessage> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return createUserDaoImpl.getAll();
 	}
 	
 	

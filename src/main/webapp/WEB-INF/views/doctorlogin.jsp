@@ -17,11 +17,11 @@
 								id="username" class="form-control" name="userName" required="true"/>
 						</div>
 						<div class="form-group">
-							<label for="password" class="text-white" >Password:</label> <input type="password"
+							<label for="password" class="text-white" >Password:</label> <input
 								id="password" class="form-control" name="password"  required="true"/>
 						</div>
 						<div class="cta-btn">
-							<a href="/admin" class="btn btn-skin btn-lg">LOGIN
+							<a href="" class="btn btn-skin btn-lg">LOGIN
 								</a>
 						</div>
 					</form>

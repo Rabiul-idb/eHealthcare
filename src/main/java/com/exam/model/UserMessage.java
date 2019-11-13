@@ -13,12 +13,26 @@ public class UserMessage implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	long id;
+	String name;
+	String email;
 	String msg;
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getMsg() {
 		return msg;
@@ -28,8 +42,9 @@ public class UserMessage implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "UserMessage [id=" + id + ", msg=" + msg + "]";
+		return "UserMessage [id=" + id + ", name=" + name + ", email=" + email + ", msg=" + msg + "]";
 	}
+	
 	
 	
 	

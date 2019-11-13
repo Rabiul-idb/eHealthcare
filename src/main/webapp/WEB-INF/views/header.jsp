@@ -74,10 +74,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="/admin">Admin</a></li>
-                <li><a href="/loginPage">Doctor</a></li>
-                <li><a href="/loginPage">Receiptionist</a></li>
-                 <li><a href="/loginPage">User</a></li>
+                <li><a href="/loginPage">Admin</a></li>                
+                <li><a href="/receiptionistlogin">Receiptionist</a></li>
+                 
                  <li role="separator" class="divider"></li>
                  <li><a href="/logout"><i class="material-icons"></i>Log Out</a></li>
               </ul>

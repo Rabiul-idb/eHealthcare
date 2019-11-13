@@ -50,9 +50,11 @@
           <div class="col-sm-3 col-md-3">
             <div class="wow fadeInUp" data-wow-delay="0.2s">
               <div class="box text-center">
-
+				<a href="/onlineAppointment">
+					
                 <i class="fa fa-check fa-3x circled bg-skin"></i>
                 <h4 class="h-bold">Make an appoinment</h4>
+				</a>
                 <p>
                   Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
                 </p>
@@ -62,9 +64,11 @@
           <div class="col-sm-3 col-md-3">
             <div class="wow fadeInUp" data-wow-delay="0.2s">
               <div class="box text-center">
-
+				<a href="#pricing">
+					
                 <i class="fa fa-list-alt fa-3x circled bg-skin"></i>
                 <h4 class="h-bold">Choose your package</h4>
+				</a>
                 <p>
                   Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
                 </p>
@@ -74,8 +78,10 @@
           <div class="col-sm-3 col-md-3">
             <div class="wow fadeInUp" data-wow-delay="0.2s">
               <div class="box text-center">
+                <a href="/onlineDoctor">
                 <i class="fa fa-user-md fa-3x circled bg-skin"></i>
                 <h4 class="h-bold">Help by specialist</h4>
+                </a>
                 <p>
                   Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
                 </p>
@@ -86,8 +92,10 @@
             <div class="wow fadeInUp" data-wow-delay="0.2s">
               <div class="box text-center">
 
+               <a href="">
                 <i class="fa fa-hospital-o fa-3x circled bg-skin"></i>
                 <h4 class="h-bold">Get diagnostic report</h4>
+               </a>
                 <p>
                   Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
                 </p>
@@ -272,7 +280,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">Alice Grue</a>
+                  <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">Rothi</a>
                   <div class="cbp-l-grid-team-position">Psychiatrist</div>
                 </li>
                 <li class="cbp-item cardiologist">
@@ -288,7 +296,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="doctors/member2.html" class="cbp-singlePage cbp-l-grid-team-name">Joseph Murphy</a>
+                  <a href="doctors/member2.html" class="cbp-singlePage cbp-l-grid-team-name">Abdul Alim</a>
                   <div class="cbp-l-grid-team-position">Cardiologist</div>
                 </li>
                 <li class="cbp-item cardiologist">
@@ -304,7 +312,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="doctors/member3.html" class="cbp-singlePage cbp-l-grid-team-name">Alison Davis</a>
+                  <a href="doctors/member3.html" class="cbp-singlePage cbp-l-grid-team-name">Enamul Haque</a>
                   <div class="cbp-l-grid-team-position">Cardiologist</div>
                 </li>
                 <li class="cbp-item neurologist">
@@ -320,7 +328,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam Taylor</a>
+                  <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Rabiul Islam</a>
                   <div class="cbp-l-grid-team-position">Neurologist</div>
                 </li>
 

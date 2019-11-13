@@ -88,6 +88,11 @@ public class HomeController {
 	public ModelAndView addReceiption() {
 		return new ModelAndView("addReceiptionist");
 	}
+	
+	@GetMapping(value = "/receiptionistlogin")
+	public ModelAndView rlogin() {
+		return new ModelAndView("receiptionistlogin");
+	}
 	@GetMapping(value = "/addReceiptionist/save")
 	public ModelAndView SaveRecep() {
 		return new ModelAndView("addReceiptionist");
@@ -96,5 +101,10 @@ public class HomeController {
 	@GetMapping(value = "/payment")
 	public ModelAndView payment() {
 		return new ModelAndView("paymentForm");
+	}
+	
+	@GetMapping(value = "/onlineDoctor")
+	public ModelAndView doctor() {
+		return new ModelAndView("userMessage");
 	}
 }

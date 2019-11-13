@@ -78,11 +78,17 @@ public class AppointmentController {
 	        massage.setText("hello wordl");
 	        System.out.println(massage);
 	        javaMailSender.send(massage);
-	        map.put("msg", "Success");
+	        map.put("msg", "Check your mail and Remember your Token Number.");
 	        
-	        return new ModelAndView("index", map);
-		
+	        return new ModelAndView("onlineAppointment", map);
+	    
 	}
+	
+	
+	
+	
+	
+	
 	
 	//show details
 	
@@ -114,7 +120,7 @@ public class AppointmentController {
 			try {
 				SimpleReportExporter simpleExporter = new SimpleReportExporter();
 
-				simpleReportFiller.setReportFileName("report9.jrxml");
+				simpleReportFiller.setReportFileName("report10.jrxml");
 				simpleReportFiller.compileReport();
 
 				Map<String, Object> parameters = new HashMap<>();
@@ -124,12 +130,12 @@ public class AppointmentController {
 				simpleReportFiller.fillReport();
 				simpleExporter.setJasperPrint(simpleReportFiller.getJasperPrint());
 
-				simpleExporter.exportToPdf("report9.pdf", "olonsoft");
+				simpleExporter.exportToPdf("report10.pdf", "olonsoft");
 
-				File file = new File("src/main/resources/reports/report9.pdf");
+				File file = new File("src/main/resources/reports/report10.pdf");
 				response.setHeader("Content-Type", servletContext.getMimeType(file.getName()));
 				response.setHeader("Content-Length", String.valueOf(file.length()));
-				response.setHeader("Content-Disposition", "inline; filename=\"report9.pdf\"");
+				response.setHeader("Content-Disposition", "inline; filename=\"report10.pdf\"");
 				Files.copy(file.toPath(), response.getOutputStream());
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block

@@ -1,15 +1,20 @@
 package com.exam.controller;
 
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.exam.model.CreateUser;
 import com.exam.model.OnlineAppointment;
+import com.exam.model.UserMessage;
 import com.exam.service.CreateUserServiceImpl;
 import com.exam.service.OnlineAppointmentServiceImpl;
 
@@ -19,27 +24,51 @@ public class CreateUserController {
 	CreateUserServiceImpl createUserServiceImpl;
 	
 	
-	@PostMapping("/createUser")
+	@PostMapping("/usermessage")
 	public ModelAndView createUser(HttpServletRequest request) {
-		String name = request.getParameter("Uname");
-		String email = request.getParameter("Uemail");
-		String age = request.getParameter("Uage");
-		String gen = request.getParameter("Ugender");
-		String contact = request.getParameter("Ucontact");
-		String password = request.getParameter("Upassword");
-		String address = request.getParameter("Uaddress");
-		
-		CreateUser createUser = new CreateUser(); 
-		createUser.setUname(name);
-		createUser.setUemail(email);
-		createUser.setUage(age);
-		createUser.setUgender(gen);
-		createUser.setUcontact(contact);
-		createUser.setUpassword(password);
-		createUser.setUaddress(address);
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String msg = request.getParameter("msg");
 		
 		
-		 createUserServiceImpl.save(createUser);
-		 return new ModelAndView("loginPage");
+		UserMessage userMessage = new UserMessage(); 
+		userMessage.setName(name);
+		userMessage.setEmail(email);
+		userMessage.setMsg(msg);
+		
+		 createUserServiceImpl.save(userMessage);
+		 return new ModelAndView("index");
 	}
+	
+	//all show
+		@RequestMapping("/showMsg")
+		public ModelAndView getAllDr(Map<String, Object> map) {
+
+			map.put("msgs", createUserServiceImpl.getAll());
+
+			System.out.println(createUserServiceImpl.getAll());
+
+			return new ModelAndView("/userMessageShow", map);
+
+		}
+
+		//delete by id
+		@RequestMapping(value = "/user/delete/{id}")
+		public ModelAndView deleteDr(@PathVariable("id") long id) {
+
+			System.out.println("work id ==============" + id);
+			createUserServiceImpl.delete(id);
+
+			return new ModelAndView("/userMessageShow");
+		}
+		
+		//mail by id
+		@RequestMapping(value = "/user/show/{id}")
+		public ModelAndView showDetails(@PathVariable("id") long id, Map<String, Object> map) {
+			
+			
+			map.put("msgs", createUserServiceImpl.getById(id));
+			return new ModelAndView("/sentEmail", map);
+		}
+		
 }

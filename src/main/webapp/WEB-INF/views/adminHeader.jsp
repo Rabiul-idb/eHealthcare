@@ -321,7 +321,7 @@
                                         <a href="/doctorRegistration">Add </a>
                                     </li>
                                     <li>
-                                        <a href="/pdf">Update</a>
+                                        <a href="/pdf">Doctor's Report</a>
                                     </li>
                                     <li>
                                         <a href="/showDoc">Show doctors</a>
@@ -338,9 +338,7 @@
                                     <li>
                                         <a href="/addReceiptionist">Add </a>
                                     </li>
-                                    <li>
-                                        <a href="pages/widgets/cards/colored.html">Update</a>
-                                    </li>
+                                    
                                     <li>
                                         <a href="/showReceiptionist">Show Details</a>
                                     </li>
@@ -357,7 +355,7 @@
                                          <a href="/onlineAppoint/show">Online Appointments</a>
                                     </li>
                                     <li>
-                                        <a href="pages/ui/alerts.html">Users</a>
+                                        <a href="/showMsg">Users Messages</a>
                                     </li>
                                     
                                 </ul>                        
@@ -372,13 +370,13 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/tables/normal-tables.html">Doctor</a>
+                                <a href="/showDoc">Doctor</a>
                             </li>
                             <li>
-                                <a href="pages/tables/jquery-datatable.html">User</a>
+                                <a href="/showMsg">User Message</a>
                             </li>
                             <li>
-                                <a href="pages/tables/editable-table.html">Receiptionist</a>
+                                <a href="/showReceiptionist">Receiptionist</a>
                             </li>
                              <li>
                                 <a href="/onlineAppoint/show">Online Appointment</a>
@@ -398,16 +396,16 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/forms/basic-form-elements.html">Doctor </a>
+                                <a href="/doctorRegistration">Doctor </a>
                             </li>
                             <li>
-                                <a href="pages/forms/advanced-form-elements.html">Online Appointment</a>
+                                <a href="/onlineAppointment">Online Appointment</a>
                             </li>
                             <li>
-                                <a href="pages/forms/form-examples.html">User</a>
+                                <a href="/register">User Registration</a>
                             </li>
                             <li>
-                                <a href="pages/forms/form-validation.html">Receiptionist</a>
+                                <a href="/addReceiptionist">Receiptionist</a>
                             </li>
                            
                         </ul>

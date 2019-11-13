@@ -30,8 +30,8 @@
 						<td>${rnst.qualification}</td>
 						
 						<td>
-							<a href="/receiption/show/${rnst.id}">Details</a>
-							<a href="/receiption/delete/${rnst.id}">delete</a>
+							<a href="/receiption/show/${rnst.id}" class="btn btn-success">Details</a>
+							<a href="/receiption/delete/${rnst.id}" class="btn btn-danger">delete</a>
 						</td>
 					
 					</tr>				
