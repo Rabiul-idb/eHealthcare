@@ -54,12 +54,12 @@ public class CreateUserController {
 
 		//delete by id
 		@RequestMapping(value = "/user/delete/{id}")
-		public ModelAndView deleteDr(@PathVariable("id") long id) {
+		public ModelAndView deleteDr(@PathVariable("id") long id,Map<String, Object> map) {
 
 			System.out.println("work id ==============" + id);
 			createUserServiceImpl.delete(id);
-
-			return new ModelAndView("/userMessageShow");
+			map.put("msgs", createUserServiceImpl.getAll());
+			return new ModelAndView("/userMessageShow", map);
 		}
 		
 		//mail by id

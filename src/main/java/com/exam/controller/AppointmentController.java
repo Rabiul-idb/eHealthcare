@@ -80,7 +80,7 @@ public class AppointmentController {
 	        javaMailSender.send(massage);
 	        map.put("msg", "Your Online Appointment is Successfull. Check your mail.");
 	        
-	        return new ModelAndView("onlineAppointment", map);
+	        return new ModelAndView("index", map);
 	    
 	}
 	
