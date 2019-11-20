@@ -32,6 +32,8 @@ public class ReceiptionistController {
 	@Autowired
 	ReceiptionistServiceImpl receiptionistServiceImpl;
 	
+	@Autowired
+	OnlineAppointmentServiceImpl onlineAppointmentServiceImpl;
 	
 	@PostMapping("/addReceiptionist")
 	public ModelAndView addDoctor(HttpServletRequest request) {
@@ -111,5 +113,50 @@ public class ReceiptionistController {
 			return new ModelAndView("addReceiptionistUpdate", model);
 		}
 
+		
+		//Login part
+		
+		//Receiptionist Login
+		@PostMapping(value = "/receiptionLogin")
+		public ModelAndView rlogin(HttpServletRequest request, Map<String, Object> map) {
+			
+				String user = request.getParameter("userName");
+				String password = request.getParameter("password");
+				
+			boolean login =  receiptionistServiceImpl.ReceiptionistLogin(user, password);
+			
+			if(login) {
+				map.put("onlineAppoint",onlineAppointmentServiceImpl.getAll());
+				return new ModelAndView("onlineAppointmentShow",map);
+				
+			}else {
+				map.put("msg", "Username or Password is not match");
+				return new ModelAndView("receiptionistlogin",map);
+			}
+						
+		}
+		
+		//admin login
+		
+		@PostMapping(value = "/adminLogin")
+		public ModelAndView alogin(HttpServletRequest request, Map<String, Object> map) {
+			
+				String user = request.getParameter("username");
+				String password = request.getParameter("password");
+				
+			//boolean login =  receiptionistServiceImpl.adminLogin(user, password);
+			
+				System.out.println(user+password);
+			if(user.equals("rabiul") && password.equals("1234")) {
+				
+				return new ModelAndView("admin",map);
+				
+			}else {
+				map.put("msg", "Username or Password is not match");
+				return new ModelAndView("loginPage",map);
+			}
+						
+		}
+		
 
 }

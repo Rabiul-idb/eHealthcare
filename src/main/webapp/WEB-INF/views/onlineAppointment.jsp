@@ -76,18 +76,16 @@
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-							<label for="inputEmail6">Token No</label> <input type="text"  name="token"
+							<label for="inputEmail6">Token No (Remember this Token Number)</label> 
+							<input type="text"  name="token" readonly="readonly"
 								class="form-control" id="inputEmail6" placeholder="" value="${random}">
 						</div>
 					<button type="submit" class="btn btn-primary pull-right">Submit</button>
 				</form>
-				<h2 class="text-success">${msg}</h2>
+				<h6 class="text-success">${msg}</h6>
 			</div>
 		</div>
 	</div>
 </section>
 
 <jsp:include page="footer.jsp"></jsp:include>
-<script>
-	alert("Check your email and get appointment by token Number. your Token number is "+token);
-</script>

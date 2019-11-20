@@ -74,11 +74,11 @@ public class AppointmentController {
 	        massage.setFrom("rabiul.idb40@gmail.com");
 	        massage.setSentDate(new Date());
 	        massage.setTo(email);
-	        massage.setSubject("Mail");
-	        massage.setText("hello wordl");
+	        massage.setSubject("Online Appointment Success");
+	        massage.setText("Hi "+name+" ,\n Your Online Appointment is Successfull. \n Your Token Number is: "+token+". When you come to our Healthcare, Our Receiptionist want to know your Token Number. \n Thanks for staying with us.");
 	        System.out.println(massage);
 	        javaMailSender.send(massage);
-	        map.put("msg", "Check your mail and Remember your Token Number.");
+	        map.put("msg", "Your Online Appointment is Successfull. Check your mail.");
 	        
 	        return new ModelAndView("onlineAppointment", map);
 	    

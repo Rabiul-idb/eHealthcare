@@ -2,16 +2,16 @@ package com.exam.dao;
 
 import java.util.List;
 
+
+
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.exam.model.AddReceiptionist;
-import com.exam.model.CreateUser;
-import com.exam.model.DoctorRegistration;
-import com.exam.model.OnlineAppointment;
-import com.exam.model.UserInfo;
+
 @Repository
 public class ReceiptionistDaoImpl implements CommonDao<AddReceiptionist> {
 
@@ -63,5 +63,20 @@ public class ReceiptionistDaoImpl implements CommonDao<AddReceiptionist> {
 		return sessionFactory.getCurrentSession().createQuery("FROM AddReceiptionist").list();
 	}
 
+	
+	//receiptionist login
+	public boolean ReceiptionistLogin(@PathVariable String user, @PathVariable String password) {
+		
+		try {
+			List<AddReceiptionist> list = sessionFactory.getCurrentSession().createQuery("FROM AddReceiptionist where username='"+user+"' and pass='"+password+"'").list();
+			if (list.isEmpty()) {
+				 return false;
+			}
+	         return true;
+		} catch (Exception e) {
+		return false;
+			// TODO: handle exception
+		}
+	}
 	
 }

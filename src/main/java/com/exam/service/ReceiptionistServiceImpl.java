@@ -6,6 +6,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.exam.dao.CreateUserDaoImpl;
 import com.exam.dao.DoctorRegistrationDaoImpl;
@@ -22,6 +23,7 @@ public class ReceiptionistServiceImpl implements CommonService<AddReceiptionist>
 
 	@Autowired
 	ReceiptionistDaoImpl receiptionistDaoImpl;
+	
 
 	@Override
 	public AddReceiptionist save(AddReceiptionist entity) {
@@ -53,4 +55,13 @@ public class ReceiptionistServiceImpl implements CommonService<AddReceiptionist>
 	}
 
 	
+	
+	//receiptionistLogin
+	
+	public boolean ReceiptionistLogin(@PathVariable String user, @PathVariable String password) {
+		
+		return receiptionistDaoImpl.ReceiptionistLogin(user, password);
+	}
+	
+
 }

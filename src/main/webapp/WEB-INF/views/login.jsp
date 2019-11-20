@@ -95,25 +95,18 @@
 										<label>Password</label> <input type="password" name="password"
 											class="form-control" placeholder="Your Password *" value="" />
 									</div>
-									<div class="form-group">
-										<label>Role</label> <select class="form-control" name="role">
-											<option value="admin">admin</option>
-											<option value="user">user</option>
-											<option value="doctor">Doctor</option>
-											<option value="receiptionist">Receioptionist</option>
-										</select>
-									</div>
+									
 
 									<input type="submit" class="btn btn-success mt-2 "
 										value="Login" /> <span class="ml-5" value="Login"
 										style="color:">Don't have an Account?</span>
 
 
-									<div>
+									
 										<a href="/register" value="Registration" class="white"
-											style="color: blue; margin-left: 120px;"> Create User
+											style="color: blue; margin-left: 100px;"> Create User
 											Account </a>
-									</div>
+									
 
 								</form>
 							</div>
