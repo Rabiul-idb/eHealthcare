@@ -1,4 +1,6 @@
 ## eHealthcare
+### to run this project in your browser type:  http://localhost:8081
+
 #### USER OPTION:
 
    At first user have to create an account by required fields and then login.
